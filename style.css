@@ -1,0 +1,118 @@
+*{
+    font-family: fantasy;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+
+}
+.allContent{
+    display: flex;
+    flex-direction: column;
+    padding: 2.3rem;
+
+}
+.oneTaskContainer,.allContent{
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.oneTaskContainer{
+    display: flex;
+    padding: .1rem;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    margin: .3rem 0 ;
+    width: 100%;
+}
+/*input for task*/
+#task{
+    width: 80%;
+    border-radius: .4rem;
+    outline: none;
+    padding: .5rem;
+    font-size: 2rem;
+    border: 1px solid #000;
+    text-align: center;
+}
+#task:focus{
+    box-shadow: 2px 2px 3px  #000;
+
+}
+/*button adding task*/
+#addTask{
+    background-color: #5dbea3;
+}
+#addTask:hover{
+    background-color: white;
+    border:1px solid #5dbea3 ;
+    color: #5dbea3;
+}
+.buttonContainer{
+    width: 50%;
+    gap: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#resetButton,#addTask,#deleteButton,#deleteAll{
+    width: 40%;
+    padding: .6rem;
+    border-radius: .2rem;
+    border:  1px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+#deleteButton{
+    background-color: rgb(208, 56, 56);
+    width: 15%;
+}
+#resetButton{
+    background-color: black;
+}
+#resetButton:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+}
+#addedTasks{
+    width: 100%;
+}
+.container{
+    border: 1px solid #000;
+    border-radius: .2rem;
+}
+#creator{
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 3px;
+
+}
+#deleteAll{
+    background-color: rgb(208, 56, 56);
+}
+#deleteAll:hover{
+    background-color: white;
+    border: 1px solid rgb(208, 56, 56) ;
+    color: rgb(208, 56, 56);
+}
+@media (max-width:600px) {
+    .buttonContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .buttonContainer *{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        text-align: center;
+    }
+    #deleteButton{
+        width: 30%;
+    }
+    #task{
+        font-size: 1.3rem;
+    }
+}

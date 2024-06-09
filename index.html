@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="allContent">
+            <div class="titleContainer">
+                <h2 id="title">
+                    <i class="fa-solid fa-book"></i> Manage Your Tasks Easily
+                </h2>
+            </div>
+            <input type="text" id="task" >
+            <div id="errMsg"></div>
+            <div class="buttonContainer">
+                <button type="button" id="addTask"><i class="fa-solid fa-plus"></i> Add to Tasks</button>
+                <button type="button" id="resetButton"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+                <button type="button" id="deleteAll"><i class='fa-solid fa-trash'></i> Delete All Task</button>
+            </div>
+            <h3>Added Tasks</h3>
+            <div id="addedTasks">
+            </div>
+        </div>
+        <h6 id="creator">TMD<i class="fa-solid fa-copyright"></i></h6>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
